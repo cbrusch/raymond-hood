@@ -1,0 +1,20 @@
+@import 'fonts';
+
+/* Colors */
+$test: purple;
+$black: #333;
+$blue: hsla(230, 26%, 31%, 1);
+$cream: hsla(45, 100%, 87%, 1);
+$mustard: hsla(38, 66%, 49%, 1);
+$purple: hsla(238, 17%, 40%, 1);
+$red: hsla(10, 85%, 61%, 1);
+$white: #fff;
+$white--transparent: hsla(360, 100%, 100%, .8);
+$yellow: hsla(47, 99%, 72%, 1);
+
+
+/* Typography */
+$font-base-size: 16px;
+$font-display: 'UniversUltraCondensedLight', 'Helvetica', 'Arial', sans-serif;
+$font-body: 'Utopia', 'Garamond', serif;
+$font-color: $black;

@@ -1,0 +1,105 @@
+@import 'variables';
+
+.nav--secondary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 1rem;
+	position: absolute;
+	bottom: 1.5rem;
+	width: 100%;
+
+	a {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		font-family: $font-display;
+		font-size: 2rem;
+		text-decoration: none;
+		width: auto;
+	}
+	a.nav__btn--prev {
+		color: $white;
+		justify-content: flex-start;
+	}
+	a.nav__btn--prev:hover {
+		color: $yellow;
+	}
+	a.nav__btn--next:focus {
+		outline: 1px dotted $white;
+	}
+	a.nav__btn--next {
+		color: $red;
+		justify-content: flex-end;
+	}
+	a.nav__btn--next:hover {
+		color: $blue;
+	}
+	a.nav__btn--next:focus {
+		outline: 1px dotted $red;
+	}
+	.btn__icon {
+		background-image: url(../img/icons/icon_arrow-right.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 5rem;
+		width: 5rem;
+	}
+	a.nav__btn--prev .btn__icon {
+		margin-right: 0rem;
+		transform: rotate(180deg);
+	}
+	a.nav__btn--next .btn__icon {
+		margin-left: 0rem;
+	}
+}
+@media screen and (max-width: 767px) {
+	.nav--secondary	{
+		bottom: 20px;
+		position: fixed;
+
+		a.nav__btn--prev {
+			color: $red;
+		}
+		a.nav__btn--prev:active {
+			color: $blue;
+		}
+	}
+}
+.layout--a .nav--secondary {
+	bottom: 6rem;
+	justify-content: flex-end;
+	padding: 1rem 2.875rem;
+
+	a {
+		color: $yellow;
+	}
+	a:focus {
+		outline: 1px dotted $yellow;
+	}
+	a:hover {
+		color: $red;
+	}
+	a:hover .btn__icon {
+		filter: hue-rotate(-56deg) saturate(7) brightness(80%); /* yellow to red */
+		transition: filter .1s;
+	}
+	a.nav__btn--prev {
+		display: none;
+	}
+}
+.layout--b .nav--secondary {
+	justify-content: flex-end;
+
+	a.nav__btn--prev {
+		display: none;
+	}
+	.btn__icon {
+		filter: hue-rotate(-57deg) saturate(7) brightness(92%); /* yellow to red */
+	}
+	a:hover .btn__icon {
+		filter: hue-rotate(192deg) saturate(10) brightness(47%); /* red to blue */
+	}
+}

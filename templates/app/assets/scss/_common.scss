@@ -1,0 +1,106 @@
+@import 'variables';
+
+body {
+	color: $font-color;
+	font-size: $font-base-size;
+}
+a {
+	transition: color .2s;
+}	
+h1 {
+	color: $white--transparent;
+	font-family: $font-display;
+	font-size: 7.75rem;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform-origin: bottom left;
+	transform: rotate(90deg);
+}
+@media screen and (max-width: 767px) {
+	h1 {
+		color: $red;
+		font-size: 3rem;
+		padding: .25rem .5rem;
+		position: absolute;
+		text-align: right;
+		transform: none;
+		width: 100%;
+		z-index: 5;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	h1 {
+		font-size: 9rem;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1214px) {
+	h1 {
+		font-size: 5.75rem;
+	}
+}
+@media screen and (min-width: 1096px) and (max-width: 1214px) {
+	h1 {
+		top: 1.5rem;
+	}
+}
+@media screen and (min-width: 1215px) and (max-width: 1330px) {
+	h1 {
+		font-size: 7rem;
+	}
+}
+h5 {
+	font-family: $font-display;
+	font-size: 1.5rem;
+}
+section {
+	background-color: $white;
+	color: $white;
+	height: 100vh;
+}
+.section__image {
+	/* background-color: transparent; */
+	background-color: $test;
+	height: 100vh;
+	padding: 0;
+	img {
+		height: 100vh;
+		width: auto;
+	}
+}
+.section__text {
+	.copy {
+		font-family: $font-body;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		padding: 0 5rem;
+	}
+	p:nth-of-type(2) { /* first paragraph of body copy */
+		padding-top: 5rem;
+	}
+	.tombstone {
+		color: $red;
+		font-family: $font-display;
+		font-size: 1rem;
+		line-height: 1.2;
+		padding: 1rem;
+		position: fixed;
+		bottom: 0;
+	}
+	.tombstone__main {
+		display: block;
+		font-weight: 800;
+	}
+}
+@media screen and (max-width: 767px) {
+	.section__text p.tombstone {
+		font-size: .875rem;
+		padding: 0;
+		position: absolute;
+		top: 0;
+	}
+}
+.branding {
+	display: none;
+}

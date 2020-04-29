@@ -1,0 +1,59 @@
+/* Utopia */
+@font-face {
+    font-family: 'Utopia'; /* Regular */
+    src: url('../fonts/Utopia-Regular.eot');
+    src: url('../fonts/Utopia-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Utopia-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Univers */
+@font-face {
+    font-family: 'Univers'; /* Bold */
+    src: url('../fonts/Univers-Bold.eot');
+    src: url('../fonts/Univers-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Univers-Bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniversCondensedLight'; /* Condensed Light */
+    src: url('../fonts/Univers-CondensedLight.eot');
+    src: url('../fonts/Univers-CondensedLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Univers-CondensedLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniversCondensedLight'; /* Condensed Light Oblique */
+    src: url('../fonts/Univers-CondensedLightOblique.eot');
+    src: url('../fonts/Univers-CondensedLightOblique.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Univers-CondensedLightOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'UniversCondensedLight'; /* Condensed Light Bold */
+    src: url('../fonts/Univers-CondensedBold.eot');
+    src: url('../fonts/Univers-CondensedBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Univers-CondensedBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniversCondensed'; /* Condensed Bold */
+    src: url('../fonts/Univers-BoldCondensed2.eot');
+    src: url('../fonts/Univers-BoldCondensed2.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Univers-BoldCondensed2.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniversUltraCondensedLight'; /* Light Ultra Condensed*/
+    src: url('../fonts/Univers-LightUltraCondensed.eot');
+    src: url('../fonts/Univers-LightUltraCondensed.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Univers-LightUltraCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
